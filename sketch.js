@@ -11,16 +11,14 @@ images[3] = loadImage("plushie4.jpg");
 
 function setup() {
 createCanvas(500, 500);
-imageMode(CENTER);
 timer = millis();
 }
 
 function draw() {
-  background(0);
-  image(images[index], width / 2, height / 2, 500, 500);
-
-  if (millis() - timer > 10000) {
-    index = (index + 1) % images.length;
-    timer = millis();
-  }
+background(0);
+image(images[index], 0, 0);
+if (millis() - timer > 10000) {
+index = (index + 1) % images.length;
+timer = millis();
+}
 }
