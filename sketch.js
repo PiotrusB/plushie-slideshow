@@ -10,7 +10,7 @@ images[3] = loadImage("plushie4.jpg");
 }
 
 function setup() {
-createCanvas(500, 500);
+createCanvas(windowWidth, windowHeight);
 timer = millis();
 }
 
