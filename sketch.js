@@ -16,7 +16,7 @@ timer = millis();
 
 function draw() {
 background(0);
-image(images[index], 0, 0, 600, 800);
+image(images[index], 0, 0, 300, 400);
 if (millis() - timer > 10000) {
 index = (index + 1) % images.length;
 timer = millis();
