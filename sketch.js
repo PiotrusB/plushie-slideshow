@@ -3,15 +3,16 @@ let index = 0;
 let timer = 0;
 
 function preload() {
-  images[0] = loadImage('images/image1.jpg');
-  images[1] = loadImage('images/image2.jpg');
-  images[2] = loadImage('images/image3.jpg');
+images[0] = loadImage("plushie1.jpg");
+images[1] = loadImage("plushie2.jpg");
+images[2] = loadImage("plushie3.jpg");
+images[3] = loadImage("plushie4.jpg");
 }
 
 function setup() {
-  createCanvas(500, 500);
-  imageMode(CENTER);
-  timer = millis();
+createCanvas(500, 500);
+imageMode(CENTER);
+timer = millis();
 }
 
 function draw() {
